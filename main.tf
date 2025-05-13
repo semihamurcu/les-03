@@ -1,5 +1,5 @@
-resource "esxi_guest" "Opdracht3VM" {
-  guest_name     = "Opdracht3VM"
+resource "esxi_guest" "Week3VM" {
+  guest_name     = "Week3VM"
   disk_store     = "Datastore1"
   ovf_source     = "https://cloud-images.ubuntu.com/releases/24.04/release/ubuntu-24.04-server-cloudimg-amd64.ova"
 
@@ -9,17 +9,12 @@ resource "esxi_guest" "Opdracht3VM" {
   network_interfaces {
     virtual_network = "VM Network"
   }
-
-  ovf_properties = {
-    "user-data" = base64encode(file("${path.module}/user-data"))
-    "meta-data" = base64encode(file("${path.module}/meta-data"))
-  }
 }
 
 resource "local_file" "inventory" {
   filename = "${path.module}/inventory.ini"
   content  = <<EOT
-[Opdracht3VM]
-${esxi_guest.Opdracht3VM.ip_address} ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/iac_key
+[Week3VM]
+${esxi_guest.Week3VM.ip_address} ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/Week3_key
 EOT
 }
