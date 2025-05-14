@@ -1,0 +1,52 @@
+---
+- name: Uitvoeren van alle taken op de Ubuntu VM
+  hosts: ubuntu_vms
+  become: yes
+  tasks:
+    # 1. Update alle packages
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Upgrade all packages
+      apt:
+        upgrade: dist
+
+    # 2. Voeg regel toe aan /etc/hosts
+    - name: Add line to /etc/hosts
+      lineinfile:
+        path: /etc/hosts
+        line: "192.168.1.3 esxi"
+        state: present
+
+    # 3. Maak user 'test' aan
+    - name: Add user 'test'
+      user:
+        name: test
+        state: present
+
+    # 4. Kopieer lokaal bestand opdracht2.txt naar VM
+    - name: Copy opdracht2.txt to /home/ubuntu/
+      copy:
+        src: ./opdracht2.txt
+        dest: /home/ubuntu/opdracht2.txt
+        owner: ubuntu
+        group: ubuntu
+        mode: '0644'
+
+    # 5. Maak backup van /etc en /var/www en voeg cronjob toe
+    - name: Create backup script
+      copy:
+        dest: /usr/local/bin/backup.sh
+        content: |
+          #!/bin/bash
+          tar -czf /tmp/etc_www_backup_$(date +\%F).tar.gz /etc /var/www
+        mode: '0755'
+
+    - name: Add cronjob for daily backup
+      cron:
+        name: "Daily backup of /etc and /var/www"
+        job: "/usr/local/bin/backup.sh"
+        user: root
+        minute: 0
+        hour: 2

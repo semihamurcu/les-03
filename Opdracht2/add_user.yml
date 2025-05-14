@@ -1,0 +1,9 @@
+---
+- name: Create user 'test'
+  hosts: ubuntu_vms
+  become: yes
+  tasks:
+    - name: Add user 'test'
+      user:
+        name: test
+        state: present
