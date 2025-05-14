@@ -6,7 +6,7 @@ In deze opdracht wordt er met behulp van Terraform een virtuele machine (VM) uit
 ## 🛠️ Benodigdheden
 - Lokale ESXi-host (met IP, gebruikersnaam en wachtwoord)
 - Terraform geïnstalleerd
-- SSH-sleutelpaar gegenereerd (`Week3_key` en `Week3_key.pub`)
+- SSH-sleutelpaar gegenereerd (`devhostnieuw` en `devhostnieuw.pub`)
 - Een geldig Ubuntu 24.04 cloud image OVF
 
 ## 📂 Bestanden in deze opdracht
@@ -15,8 +15,8 @@ In deze opdracht wordt er met behulp van Terraform een virtuele machine (VM) uit
 | `main.tf`        | Terraform-configuratie voor het deployen van de VM en het genereren van de inventory. |
 | `providers.tf`   | Bevat de configuratie voor de gebruikte Terraform-providers (`esxi`, optioneel `azurerm`). |
 | `inventory.ini`  | Wordt automatisch gegenereerd met het IP-adres van de VM en Ansible-configuratie. |
-| `~/.ssh/Week3_key` | Privésleutel voor SSH-toegang (lokaal aanwezig, niet gecommit). |
-| `~/.ssh/Week3_key.pub` | Publieke sleutel die aan de VM gekoppeld kan worden (lokaal aanwezig, optioneel gebruikt met cloud-init). |
+| `~/.ssh/devhostnieuw` | Privésleutel voor SSH-toegang (lokaal aanwezig, niet gecommit). |
+| `~/.ssh/devhostnieuw.pub` | Publieke sleutel die aan de VM gekoppeld kan worden (lokaal aanwezig, optioneel gebruikt met cloud-init). |
 | `generate_inventory.sh` | Script dat een basis-inventorybestand (inventory.ini) genereert.
 | `metadata.yaml	` | Cloud-init metadata met o.a. de hostname van de VM.
 | `userdata.yaml	` | Cloud-init gebruikersdata, zoals SSH-sleutels en gebruikersinstellingen.

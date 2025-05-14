@@ -5,7 +5,7 @@
   tasks:
     - name: Copy opdracht2.txt to /home/ubuntu/
       copy:
-        src: ./Opdracht2.txt
+        src: Opdracht2.txt
         dest: /home/ubuntu/Opdracht2.txt
         owner: ubuntu
         group: ubuntu
