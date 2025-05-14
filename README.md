@@ -20,7 +20,6 @@ In deze opdracht wordt er met behulp van Terraform een virtuele machine (VM) uit
 | `inventory.ini`  | Wordt automatisch gegenereerd met het IP-adres van de VM en Ansible-configuratie. |
 | `~/.ssh/devhostnieuw` | Privésleutel voor SSH-toegang (lokaal aanwezig, niet gecommit). |
 | `~/.ssh/devhostnieuw.pub` | Publieke sleutel die aan de VM gekoppeld kan worden (lokaal aanwezig, optioneel gebruikt met cloud-init). |
-| `generate_inventory.sh` | Script dat een basis-inventorybestand (inventory.ini) genereert.
 | `metadata.yaml	` | Cloud-init metadata met o.a. de hostname van de VM.
 | `userdata.yaml	` | Cloud-init gebruikersdata, zoals SSH-sleutels en gebruikersinstellingen.
 
@@ -30,3 +29,16 @@ In deze opdracht wordt er met behulp van Terraform een virtuele machine (VM) uit
 1. **Initialiseer Terraform**  
    ```bash
    terraform init and apply
+
+# Opdracht 2 – Ansible automatisering
+
+## 📌 Doel
+In deze opdracht worden meerdere taken geautomatiseerd uitgevoerd op de VM die is uitgerold in opdracht 1. Hiervoor worden aparte Ansible playbooks gebruikt.
+
+full_task.yml	Voert alle taken uit in één playbook.
+update.yml	Alleen apt update & upgrade.
+hosts_edit.yml	Voegt regel toe aan /etc/hosts om esxi te koppelen aan een IP.
+add_user.yml	Maakt gebruiker test aan.
+copy_file.yml	Kopieert lokaal bestand naar de VM (files/opdracht2.txt).
+backup_cron.yml	Maakt een script aan en voegt een cronjob toe voor backup.
+files/opdracht2.txt	Bestand dat naar de VM wordt gekopieerd.
