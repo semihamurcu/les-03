@@ -17,9 +17,13 @@ In deze opdracht wordt er met behulp van Terraform een virtuele machine (VM) uit
 | `inventory.ini`  | Wordt automatisch gegenereerd met het IP-adres van de VM en Ansible-configuratie. |
 | `~/.ssh/Week3_key` | Privésleutel voor SSH-toegang (lokaal aanwezig, niet gecommit). |
 | `~/.ssh/Week3_key.pub` | Publieke sleutel die aan de VM gekoppeld kan worden (lokaal aanwezig, optioneel gebruikt met cloud-init). |
+| `generate_inventory.sh` | Script dat een basis-inventorybestand (inventory.ini) genereert.
+| `metadata.yaml	` | Cloud-init metadata met o.a. de hostname van de VM.
+| `userdata.yaml	` | Cloud-init gebruikersdata, zoals SSH-sleutels en gebruikersinstellingen.
+
 
 ## ▶️ Uitvoeren van de code
 
 1. **Initialiseer Terraform**  
    ```bash
-   terraform init
+   terraform init and apply

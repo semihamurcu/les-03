@@ -1,20 +1,20 @@
-resource "esxi_guest" "Week3VM" {
-  guest_name     = "Week3VM"
-  disk_store     = "Datastore1"
-  ovf_source     = "https://cloud-images.ubuntu.com/releases/24.04/release/ubuntu-24.04-server-cloudimg-amd64.ova"
-
-  numvcpus       = 1
-  memsize        = 1024
-
+resource "esxi_guest" "week3vm" {
+  guest_name         = "week3vm"
+  disk_store         = "Datastore1"
+  ovf_source         = "https://cloud-images.ubuntu.com/releases/24.04/release/ubuntu-24.04-server-cloudimg-amd64.ova"
+  
   network_interfaces {
     virtual_network = "VM Network"
   }
-}
 
-resource "local_file" "inventory" {
-  filename = "${path.module}/inventory.ini"
-  content  = <<EOT
-[Week3VM]
-${esxi_guest.Week3VM.ip_address} ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/Week3_key
-EOT
+  guestinfo = {
+    "metadata"          = filebase64("metadata.yaml")
+    "metadata.encoding" = "base64"
+    "userdata"          = filebase64("userdata.yaml")
+    "userdata.encoding" = "base64"
+  }
+
+provisioner "local-exec" {
+  command = "bash ./generate_inventory.sh"
+}
 }
