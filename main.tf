@@ -13,8 +13,17 @@ resource "esxi_guest" "week3vm" {
     "userdata"          = filebase64("userdata.yaml")
     "userdata.encoding" = "base64"
   }
-
-provisioner "local-exec" {
-  command = "bash ./generate_inventory.sh"
 }
+
+output "vm_ip_address" {
+  value = esxi_guest.week3vm.ip_address
+}
+
+resource "local_file" "ansible_inventory" {
+  content = <<EOF
+[week3vm]
+${esxi_guest.week3vm.guest_name} ansible_host=${esxi_guest.week3vm.ip_address} ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/devhostnieuw
+EOF
+
+  filename = "${path.module}/inventory.ini"
 }

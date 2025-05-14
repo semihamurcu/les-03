@@ -1,5 +1,8 @@
 # Opdracht 1 – Terraform VM deployment op ESXi
 
+# Bron
+https://chatgpt.com/share/6824b421-e684-8007-ba81-ee9c8f4900c3
+
 ## 📌 Doel
 In deze opdracht wordt er met behulp van Terraform een virtuele machine (VM) uitgerold op een lokale ESXi-host. Na deployment wordt automatisch een Ansible-inventorybestand aangemaakt waarin de VM is opgenomen. SSH-toegang tot de VM wordt geregeld via een SSH-sleutel.
 

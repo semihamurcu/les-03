@@ -2,6 +2,6 @@
 users:
   - name: ubuntu
     ssh-authorized-keys:
-      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDL8QTUJDtHnPWErtWbdAmj58yq3sGKWdJRsY9g0si9/t1SeQZhD6j+pwhd3gAza+nmwxSZw5idPzq5q+VsTm9QGTaReGC8B8Ainyy+7vBzgpE9KI5sTyb0G0bkTw8i/Z/W9qCx7MEjlSNEeNhXJqCOZPNNsD6Mxjkih42R2tNVoLilw9be8hwWAHZLQWllzJYpcVeJ682eGxreN8CynQ8Rh1Edk4b4dKa/THVB4nK5rj3l6+lbDxOmk/Bw0iT407qjUswTOoiXqhebUTpr3XgpC2LoGcjshoVyrpSWtzIg1ZI7wk8Uw89UIkVp4+s1mEgKujtj6xk+xEXgzbU3jN1T+MXR70wcOtjenID5xmbKCeqfZETz9PRfg8/GzvYih2+FWaU7dT7lAWptrlm/HS3XVI0F0sxQPsvGvgM2nTEgf3H/Ydeoy6QmB0r+KThSLiXmPW0HyNTe4BBQbRhRnx11WXOxkoVkTsVh9PJUsa8qSqx/OgsMMcCk6QdzGKNeV4I3qperjz8oXFOA6aaWok3/GD16wPUkPnmyOcgWgdkzeg3oGjCWXOAJ19VmxBk8tyOBvP2a58Rl0Qh30MuJgxryz8pw7crziyjtWRAhp3g2hOB11/dHvU+J4aoPkXZMAe3uxlxafyIEyIvc1uu08c9YSFTH5kO4pl0OLFD+Wc3UWQ== student@Ubuntu2404DesktopGold-mcm35467-294837703022
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGVvqP9kolLDRi0nL1nb1Eqt2RjI9GpAq7q4UG4HfphD student@Ubuntu2404DesktopGold-mcm35467-294837703022
     sudo: ['ALL=(ALL) NOPASSWD:ALL']
     shell: /bin/bash

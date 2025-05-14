@@ -28,7 +28,7 @@
     # 4. Kopieer lokaal bestand opdracht2.txt naar VM
     - name: Copy opdracht2.txt to /home/ubuntu/
       copy:
-        src: ./opdracht2.txt
+        src: Opdracht2.txt
         dest: /home/ubuntu/opdracht2.txt
         owner: ubuntu
         group: ubuntu
