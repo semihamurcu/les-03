@@ -31,8 +31,10 @@ In deze opdracht wordt een virtuele machine (VM) gedeployed op een lokale ESXi-h
    ```bash
    terraform apply
 
-   
-c:\Users\Semih.Hamurcu\OneDrive - Windesheim Office365\24-25\4. Infrastructure as Code\les-03\Opdracht 3\Opdracht 3 .mp4
+## Resultaat van uitvoeren code
 
-
-<video controls src="Opdracht 3 .mp4" title="Title"></video>
+Zie hiervoor Opdracht 3 .mp4. 
+Video toont:
+* web1, web2 en db1 worden aangemaakt vanuit 1 manifest.
+* Inventory.ini wordt correct aangemaakt.
+* We kunnen verbinden naar db1 doormiddel van ssh.
