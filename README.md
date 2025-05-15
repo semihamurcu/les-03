@@ -1,27 +1,20 @@
-# IT-Infrastructure Automation – Overzicht
+# 💻 IT-Infrastructure Automation – Projectoverzicht
 
-In deze repository vind je verschillende opdrachten die stap voor stap infrastructuur automatiseren met behulp van **Terraform** en **Ansible**.
+Deze repository bevat meerdere opdrachten waarin infrastructuur wordt geautomatiseerd met **Terraform** en **Ansible**.  
+Elke opdracht bevindt zich in een eigen map met daarin een aparte `README.md` die uitlegt wat er is gedaan, hoe het werkt en hoe je het kunt uitvoeren.
 
-Voor het behouden van overzicht is elke opdracht of map voorzien van een eigen `README.md` waarin kort wordt uitgelegd:
+---
 
-- Wat het doel is van de opdracht
-- Welke tools/configuratie zijn gebruikt
-- Hoe je het kunt uitvoeren of testen
+## 📁 Structuur
 
-## 📁 Voorbeeldstructuur:
+| Opdracht                                                                 | Inhoud                                                      | Tools          |
+|--------------------------------------------------------------------------|-------------------------------------------------------------|----------------|
+| **Opdracht 1 – Terraform VM deployment op ESXi**                         | `README.md`, `.tf`, `.yaml`, `.sh`                          | Terraform      |
+| **Opdracht 2 – Ansible playbooks deployen naar VM**                      | `README.md`, Ansible playbooks                              | Ansible        |
+| **Opdracht 3 – Cloud-init en Ansible inventory**                         | `README.md`, `.tf`, `.yaml`, `.tftpl`                       | Terraform + Cloud-init |
+| **Opdracht 4 – Ansible playbook nginx en database server**              | `README.md`, Ansible playbook                               | Ansible        |
+| **Opdracht 5 – Ansible playbook Proxmox Hypervisor**                    | `README.md`, Ansible playbook                               | Ansible        |
 
-| Bestand         |
-|------------------|
-`Opdracht 1 – Terraform VM deployment op ESXi`
-README.md *.tf / .yaml / .sh   
-`Opdracht 2 – Ansible playbooks deployen naar VM`
-README.md, Playbooks # Ansible 
-`Opdracht 3 – Cloud-init en Ansible inventory`
-README.md *.tf / .yaml / .tftpl  # Terraform manifest + cloud-init templates
-`Opdracht 4 – Ansible playbook nginx en database server`
-README.md Playbook # Ansible
-`Opdracht 5 – Ansible playbook Promox Hypervisor`
-README.md, Playbook # Ansible
-
+---
 
 
