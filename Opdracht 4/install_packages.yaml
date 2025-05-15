@@ -1,0 +1,26 @@
+---
+- name: Install NGINX on web servers
+  hosts: web
+  become: yes
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install NGINX
+      apt:
+        name: nginx
+        state: present
+
+- name: Install MariaDB on database server
+  hosts: db
+  become: yes
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install MariaDB server
+      apt:
+        name: mariadb-server
+        state: present
