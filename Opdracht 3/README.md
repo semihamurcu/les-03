@@ -31,5 +31,8 @@ In deze opdracht wordt een virtuele machine (VM) gedeployed op een lokale ESXi-h
    ```bash
    terraform apply
 
-Opdracht 3/Opdracht 3 .mp4
+   
+c:\Users\Semih.Hamurcu\OneDrive - Windesheim Office365\24-25\4. Infrastructure as Code\les-03\Opdracht 3\Opdracht 3 .mp4
+
+
 <video controls src="Opdracht 3 .mp4" title="Title"></video>
