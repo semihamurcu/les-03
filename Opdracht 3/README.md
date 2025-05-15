@@ -26,3 +26,10 @@ In deze opdracht wordt een virtuele machine (VM) gedeployed op een lokale ESXi-h
 1. **Initialiseer Terraform**
    ```bash
    terraform init
+
+2. **Pas de configuratie**
+   ```bash
+   terraform apply
+
+
+<video controls src="Opdracht 3 .mp4" title="Title"></video>
