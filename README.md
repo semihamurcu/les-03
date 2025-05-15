@@ -10,18 +10,19 @@ Voor het behouden van overzicht is elke opdracht of map voorzien van een eigen `
 
 📁 Voorbeeldstructuur:
 
+
 Opdracht 1
-└── README.md
-└── De benodigde scripts
+- └── README.md
+- └── De benodigde scripts
 Opdracht 2
-└── README.md
-└── De benodigde scripts
+- └── README.md
+- └── De benodigde scripts
 Opdracht 3
-└── README.md
-└── De benodigde scripts
+- └── README.md
+- └── De benodigde scripts
 Opdracht 4
-└── README.md
-└── De benodigde scripts
+- └── README.md
+- └── De benodigde scripts
 Opdracht 5
-└── README.md
-└── De benodigde scripts
+- └── README.md
+- └── De benodigde scripts
