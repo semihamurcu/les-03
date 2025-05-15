@@ -12,25 +12,16 @@ Voor het behouden van overzicht is elke opdracht of map voorzien van een eigen `
 
 | Bestand         | Uitleg |
 |------------------|--------|
-├── `Opdracht 1 – Terraform VM deployment op ESXi`
-│   ├── README.md              # Uitleg en handleiding
-│   └── *.tf / .yaml / .sh     # Alle benodigde configuratiebestanden
-│
-├── `Opdracht 2 – Ansible playbooks deployen naar VM`
-│   ├── README.md
-│   └── Playbooks # Ansible 
-│
-├── `Opdracht 3 – Cloud-init en Ansible inventory`
-│   ├── README.md
-│   └── *.tf / .yaml / .tftpl  # Terraform manifest + cloud-init templates
-│
-├── `Opdracht 4 – Ansible playbook nginx en database server`
-│   ├── README.md
-│   └── Playbook # Ansible
-│
-├──`Opdracht 5 – Ansible playbook Promox Hypervisor`
-│   ├── README.md
-│   └── Playbook # Ansible
+`Opdracht 1 – Terraform VM deployment op ESXi`
+README.md *.tf / .yaml / .sh   
+`Opdracht 2 – Ansible playbooks deployen naar VM`
+README.md, Playbooks # Ansible 
+`Opdracht 3 – Cloud-init en Ansible inventory`
+README.md *.tf / .yaml / .tftpl  # Terraform manifest + cloud-init templates
+`Opdracht 4 – Ansible playbook nginx en database server`
+README.md Playbook # Ansible
+`Opdracht 5 – Ansible playbook Promox Hypervisor`
+README.md, Playbook # Ansible
 
 
 
