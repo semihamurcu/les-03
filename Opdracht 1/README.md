@@ -2,6 +2,18 @@
 
 In deze opdracht wordt met behulp van **Terraform** een Ubuntu 24.04 VM uitgerold op een lokale **ESXi**-server. Hierbij wordt gebruik gemaakt van een publieke OVA, Cloud-Init configuratie, en SSH key authenticatie.
 
+## Bronnen
+
+Opstart van opdracht gebruik gemaakt van Brightspace.
+Week 2 - Hello, Terraform!
+https://leren.windesheim.nl/d2l/le/lessons/98305/topics/1223766
+
+
+Vervolgens script verder uitgewerkt doormiddel van AI voor de (Inventory.ini)
+https://chatgpt.com/share/6825f095-25d8-8002-ad84-8aaf723c2ca9
+
+
+
 ---
 
 ## 🖥️ Infrastructuurdetails
@@ -37,3 +49,10 @@ In deze opdracht wordt met behulp van **Terraform** een Ubuntu 24.04 VM uitgerol
    ```bash
    terraform init
    terraform apply
+
+Voor resultaat zie video Week1.mp4
+Video toont:
+* Deployen van een vm naar de ESXI genaamd week3vm.
+* Inventory wordt aangemaakt met het IP wat die krijgt.
+* Kleine detail is dat de main.tf dus wacht tot die een ip krijgt -> Daarna maakt die een inventory file aan.
+
