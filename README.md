@@ -10,8 +10,8 @@ Voor het behouden van overzicht is elke opdracht of map voorzien van een eigen `
 
 ## 📁 Voorbeeldstructuur:
 
-| Bestand         | Uitleg |
-|------------------|--------|
+| Bestand         |
+|------------------|
 `Opdracht 1 – Terraform VM deployment op ESXi`
 README.md *.tf / .yaml / .sh   
 `Opdracht 2 – Ansible playbooks deployen naar VM`
