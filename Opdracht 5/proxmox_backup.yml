@@ -1,0 +1,34 @@
+---
+- name: Backup all VMs on Proxmox Hypervisor
+  hosts: proxmox
+  gather_facts: no
+
+  vars:
+    api_user: "test"
+    api_password: "test"
+    api_host: "node1"
+    backup_storage: "backup_vm"
+
+  tasks:
+    - name: Gather all VMs on the Proxmox node
+      community.general.proxmox:
+        api_user: "{{ api_user }}"
+        api_password: "{{ api_password }}"
+        api_host: "{{ api_host }}"
+        vmid: all
+        node: "{{ inventory_hostname }}"
+        state: list
+      register: vms_list
+
+    - name: Backup each VM
+      community.general.proxmox:
+        api_user: "{{ api_user }}"
+        api_password: "{{ api_password }}"
+        api_host: "{{ api_host }}"
+        vmid: "{{ item.vmid }}"
+        node: "{{ inventory_hostname }}"
+        storage: "{{ backup_storage }}"
+        state: backup
+      loop: "{{ vms_list.vms }}"
+      loop_control:
+        label: "{{ item.vmid }}"
