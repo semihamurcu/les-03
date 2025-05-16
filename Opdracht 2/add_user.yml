@@ -1,9 +1,0 @@
----
-- name: Create user 'test'
-  hosts: week3vm
-  become: yes
-  tasks:
-    - name: Add user 'test'
-      user:
-        name: test
-        state: present
