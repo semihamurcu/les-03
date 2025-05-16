@@ -1,0 +1,3 @@
+#cloud-config
+local-hostname: week3vm
+change
