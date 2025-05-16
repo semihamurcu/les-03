@@ -34,4 +34,4 @@ ansible-playbook -i inventory.ini install_packages.yaml
 
 ## Video
 
-MP4 toont deployment van NGINX en MariaDB.
+pm4 toont deployment van NGINX en MariaDB.

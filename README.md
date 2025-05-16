@@ -18,3 +18,11 @@ Elke opdracht bevindt zich in een eigen map met daarin een aparte `README.md` di
 ---
 
 
+## Uitvoerbaarheid tonen
+
+Alle opdrachten (terraform files en
+Ansible playbooks) zijn gemaakt en
+uitvoerbaar. Het zijn losse playbooks per
+taak
+
+Toonbaarheid is gemaakt door .mp4 bestanden.
