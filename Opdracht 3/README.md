@@ -18,7 +18,7 @@ In deze opdracht wordt een virtuele machine (VM) gedeployed op een lokale ESXi-h
 | `main.tf`             | Terraform-configuratie voor het aanmaken van de VM en het koppelen van cloud-init. |
 | `variables.tf`        | Variabelen die gebruikt worden in de configuratie, zoals VM-naam of netwerk. |
 | `userdata.yaml`       | Cloud-init configuratie met o.a. gebruikers, SSH-sleutels en packages. |
-| `📄 metadata.yaml.tftpl` | Templatebestand voor metadata t.b.v. cloud-init, bevat o.a. hostname. |
+| `metadata.yaml.tftpl` | Templatebestand voor metadata t.b.v. cloud-init, bevat o.a. hostname. |
 | `README.md`           | Deze handleiding voor het uitvoeren van de opdracht. |
 
 ## ▶️ Uitvoeren van de code
