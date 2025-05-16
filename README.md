@@ -18,3 +18,10 @@ Elke opdracht bevindt zich in een eigen map met daarin een aparte `README.md` di
 ---
 
 
+## Bronnen
+
+Voor deze opdrachten is gebruikgemaakt van AI-ondersteuning. In elke README.md is duidelijk vermeld welke bronnen en links zijn geraadpleegd.
+
+## Aantoonbaarheid werking
+
+Om de werking te verifiëren, is er per week een korte video (10–20 seconden) toegevoegd waarin getoond wordt dat het script aan de gestelde eisen voldoet.
