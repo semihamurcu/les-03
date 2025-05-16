@@ -10,6 +10,7 @@ https://leren.windesheim.nl/d2l/le/lessons/98305/topics/1223766
 
 
 Vervolgens script verder uitgewerkt doormiddel van AI voor de (Inventory.ini)
+
 https://chatgpt.com/share/6825f095-25d8-8002-ad84-8aaf723c2ca9
 
 
@@ -56,4 +57,3 @@ Video toont:
 * Inventory wordt aangemaakt met het IP wat die krijgt.
 * Kleine detail is dat de main.tf dus wacht tot die een ip krijgt -> Daarna maakt die een inventory file aan.
 
-t
