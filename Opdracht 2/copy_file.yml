@@ -1,6 +1,6 @@
 ---
 - name: Copy opdracht2.txt to VM
-  hosts: ubuntu_vms
+  hosts: week3vm
   become: yes
   tasks:
     - name: Copy opdracht2.txt to /home/ubuntu/
