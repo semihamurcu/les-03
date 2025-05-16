@@ -1,6 +1,6 @@
 ---
 - name: Backup /etc and /var/www daily
-  hosts: ubuntu_vms
+  hosts: week3vm
   become: yes
   tasks:
     - name: Create backup script

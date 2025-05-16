@@ -1,6 +1,6 @@
 ---
 - name: Add ESXi server entry to /etc/hosts
-  hosts: ubuntu_vms
+  hosts: week3vm
   become: yes
   tasks:
     - name: Add line to /etc/hosts

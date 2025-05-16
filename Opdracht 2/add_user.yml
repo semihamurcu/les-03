@@ -1,6 +1,6 @@
 ---
 - name: Create user 'test'
-  hosts: ubuntu_vms
+  hosts: week3vm
   become: yes
   tasks:
     - name: Add user 'test'
