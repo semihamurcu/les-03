@@ -57,3 +57,4 @@ Video toont:
 * Inventory wordt aangemaakt met het IP wat die krijgt.
 * Kleine detail is dat de main.tf dus wacht tot die een ip krijgt -> Daarna maakt die een inventory file aan.
 
+.
