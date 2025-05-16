@@ -28,5 +28,5 @@ EOF
   filename = "${path.module}/inventory.ini"
 }
 
-.
+
 
